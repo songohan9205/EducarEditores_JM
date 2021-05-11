@@ -22,26 +22,26 @@ El desarrollo se ha realizado en PHP con framework Laravel. El equipo debe conta
 
 La API rest con los siguientes servicios:
 
-1. Listar todos los usuarios registrados: **http://127.0.0.1:8000/api/listarUsuarios**
-2. Listar usuario por filtro (número de documento): **http://127.0.0.1:8000/api/filtroUsuario**
+**1. Listar todos los usuarios registrados: http://127.0.0.1:8000/api/listarUsuarios**
+**2. Listar usuario por filtro (número de documento): http://127.0.0.1:8000/api/filtroUsuario**
 
 *Parámetros de ingreso*
 - *documento* : Número de documento de un usuario registrado
 
 ###### Servicio adicional a lo solicitado
-3. Listar usuario por filtro doble (campo/dato): **http://127.0.0.1:8000/api/filtroDoble**
+**3. Listar usuario por filtro doble (campo/dato): http://127.0.0.1:8000/api/filtroDoble**
 
 *Parámetros de ingreso*
 - *campo* : Nombre del campo por el cual se desea aplicar filtro
 - *dato*  : Valor del campo por el cual se va a filtrar (funciona con un like '%dato%')
 
-4. Recarga de saldo (documento/recarga): **http://127.0.0.1:8000/api/recarga**
+**4. Recarga de saldo (documento/recarga): http://127.0.0.1:8000/api/recarga**
 
 *Parámetros de ingreso*
 - *documento* : Número de documento del usuario al que se realiza la descarga
 - *recarga*   : Valor de la recarga a realizar
 
-5. Transferencia entre usuarios (usuarioTransfiere/usuarioRecibe/transferencia): **http://127.0.0.1:8000/api/transferencia**
+**5. Transferencia entre usuarios (usuarioTransfiere/usuarioRecibe/transferencia): http://127.0.0.1:8000/api/transferencia**
 
 *Parámetros de ingreso*
 - *usuarioTransfiere* : Número de documento del usuario que realiza la transferencia
@@ -49,7 +49,7 @@ La API rest con los siguientes servicios:
 - *transferencia*     : Monto de la transferencia
 
 ###### Servicio adicional a lo solicitado
-6. Registro de nuevos usuario (documento/primer_nombre/segundo_nombre/primer_apellido/segundo_apellido/saldo/cargo_id): **http://127.0.0.1:8000/api/crearUsuario**
+**6. Registro de nuevos usuario (documento/primer_nombre/segundo_nombre/primer_apellido/segundo_apellido/saldo/cargo_id): http://127.0.0.1:8000/api/crearUsuario**
 
 *Parámetros de ingreso*
 - *documento*        : Número de documento del usuario
@@ -61,10 +61,10 @@ La API rest con los siguientes servicios:
 - *cargo_id*         : ID del cargo asociado al usuario
 
 ###### Servicio adicional a lo solicitado
-7. Lista de cargos: **http://127.0.0.1:8000/api/listarCargos**
+**7. Lista de cargos: http://127.0.0.1:8000/api/listarCargos**
 
 ###### Servicio adicional a lo solicitado
-8. Registro de gastos (documento/gasto/descripcion): **http://127.0.0.1:8000/api/gastos**
+**8. Registro de gastos (documento/gasto/descripcion): http://127.0.0.1:8000/api/gastos**
 
 *Parámetros de ingreso*
 - *documento*    : Número de documento del usuario
