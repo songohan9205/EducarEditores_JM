@@ -276,8 +276,10 @@ class educarController extends Controller
                     'primer_apellido'  => $primerApellido,
                     'segundo_apellido' => $segundoApellido,
                     'saldo'            => $saldo,
-                    'cargo_id'         => $cargoId
+                    'cargo_id'         => $cargoId                    
                 ]);
+                return 'Se ha creado el usuario exitosamente';
+                
             } catch (\Throwable $e) {
                 return 'Se ha presentado un error en el registro del usuario. Valide que los nombres de los campos en la API sean correctos. Excepción generada: ' . $e->getMessage();
             }
